@@ -1,0 +1,21 @@
+{
+    "version": 2,
+    "framework": null,
+    "functions": {
+        "api/index.php": { "runtime": "vercel-php@0.7.1" }
+    },
+    "routes": [
+        {
+            "src": "/src/bootstrap/app.css",
+            "dest": "/public/build/assets/app.css"
+        },
+        {
+            "src": "/src/bootstrap/app.js",
+            "dest": "/public/build/assets/app.js"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/api/index.php"
+        }
+    ]
+}
